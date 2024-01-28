@@ -97,6 +97,7 @@ header .textos-header{
     width: 40%;
     height: 60%;
     overflow: hidden;
+    border-radius: 10%;
 }
 .sobre-mi .contenido-textos{
     width: 48%;
