@@ -27,7 +27,8 @@ export const HeaderComponent = () => {
         <header className="header">
             <div className="logo">
                 {/* <img src="/img/iconos/lobo.png"></img> */}
-                <img alt="logo" src="/img/iconos/saturno.png"></img>
+                {/* <img alt="logo" src="/img/iconos/saturno.png"></img> */}
+                <img alt="logo" src="/img/iconos/saturno.gif"></img>
                 <h3>López D. Emanuel</h3>
             </div>
             {widthScreen > 800 ? (
