@@ -140,7 +140,7 @@ code {
   text-align: left;
   height: 5%;
   margin-top: 20px;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
   animation: toRight 1500ms 1;
   animation-fill-mode: forwards;
 }
@@ -149,11 +149,11 @@ code {
     transform: translateX(-150px);
   }
   50%{
-    transform: translateX(300px);
+    transform: translateX(500px);
 
   }
   100%{
-    transform: translateX(130px);
+    transform: translateX(150px);
   }
 }
 .inicio .conteiner-mask{
