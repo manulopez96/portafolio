@@ -112,7 +112,8 @@ code {
 .footer .footer-redes{
   display: flex;
   justify-content: flex-end; 
-  margin: 5px 5px auto auto;
+  align-items: center;
+  margin: -2px 5px auto auto;
   /* display: none; */
 }
 .footer .footer-redes a{
@@ -255,7 +256,7 @@ code {
   width: 90%;
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 0 0 2px #d41a1a;
+  text-shadow: 0 0 1px #000;
 }
 .contacto a:hover .contenedor-logo img{
   right: 20%;
