@@ -19,7 +19,8 @@ code {
   border-bottom: 1px solid #bbb;
   box-shadow: 0 0 15px #ddd;
   width: 100%;
-  min-width: 370px;
+  height: 60px;
+  min-width: 320px;
   margin-bottom: 30px;
 }
 .header .logo{
@@ -30,28 +31,30 @@ code {
 .header .logo img{
   height: 50px;
   width: 50px;
-  
   margin: auto;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 .header .logo h3{
   font-size: 20px;
   height: 25px;
-  width: 170px;
+  width: 190px;
   margin: auto;
-  margin-left: 5px;
+  margin-left: 0px;
   /* margin-top: 13px; */
 }
 .header nav{
   flex: 1 1 auto;
   width: 100%;
-  margin: auto 15px;
+  margin: auto 15px auto auto;
 }
 .header nav ul{
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin-top: 15px;
+  padding: 0;
+  margin: auto;
+  /* margin-top: 15px; */
+  margin-left: auto;
 }
 .drop ul .menu-desplegado a,
 .header nav ul li a{
@@ -77,10 +80,10 @@ code {
 }
 .drop ul{
   background-color: white;
+  padding: 0;
   margin: auto;
   margin-right: 2px;
   margin-bottom: 15px;
-  
 }
 .drop ul .menu-boton{
   background-color: white;
@@ -99,7 +102,7 @@ code {
 .footer{
   display: flex;
   justify-content: center;
-  border-top: 1px solid black; 
+  border-top: 1px solid black;
   margin-top: 25px;
   padding-top: 10px;
 }
@@ -111,7 +114,7 @@ code {
 }
 .footer .footer-redes{
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
   margin: -2px 5px auto auto;
   /* display: none; */
@@ -369,7 +372,6 @@ code {
 }
 .portafolio .contenedor-slider .contenedor-img .nombre-proyecto{
   top: 20%;
-  /* visibility: hidden; */
 }
 .portafolio .contenedor-slider .contenedor-img .descripcion-proyecto{
   top: 40%;

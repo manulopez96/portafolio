@@ -12,8 +12,16 @@ export const Inicio = () => {
             nombre: "React",
         },
         {
+            src: "/img/competencies/nodejs.png",
+            nombre: "Node",
+        },
+        {
             src: "/img/competencies/js.png",
             nombre: "Javascript",
+        },
+        {
+            src: "/img/competencies/mongodb.png",
+            nombre: "MongoDB",
         },
         {
             src: "/img/competencies/html.png",
@@ -30,6 +38,10 @@ export const Inicio = () => {
         {
             src: "/img/competencies/angular.png",
             nombre: "Angular",
+        },
+        {
+            src: "/img/competencies/expressjs.png",
+            nombre: "Express",
         },
     ];
 

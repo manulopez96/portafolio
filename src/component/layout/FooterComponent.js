@@ -5,7 +5,7 @@ export const FooterComponent = () => {
     return (
         <footer className="footer">
             <p>
-                LPZ Design &copy; 
+                LPZ Design &copy;
                 {fecha[11]}
                 {fecha[12]}
                 {fecha[13]}
