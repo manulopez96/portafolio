@@ -35,7 +35,8 @@ export const Inicio = () => {
 
     return (
         <div className="page inicio">
-            <h1>HOLA!</h1>
+            <h1>Hey there !</h1>
+            <br></br>
             <div className="conteiner-mask">
                 <div className="mask">
                     <img
@@ -46,22 +47,25 @@ export const Inicio = () => {
             </div>
             <div className="descripcion">
                 <p>
-                    Soy estudiante de Ingeniería en Sistemas en la UTN FRC. Mi
-                    trayectoria académica inicial en Ingeniería Electrónica
-                    reveló mi afinidad por el pensamiento lógico, pero fue a
-                    través de experiencias en programación donde descubrí mi
-                    verdadero potencial. Con determinación, realicé un cambio a
-                    Ingeniería en Sistemas, donde he encontrado una verdadera
-                    pasión por el desarrollo de software. Mi habilidad para el
-                    pensamiento lógico, combinada con mi creatividad,
-                    proactividad y capacidad para aprender rápidamente, me ha
-                    permitido destacarme tanto en mis estudios universitarios
+                    Soy estudiante de <strong>Ingeniería en Sistemas</strong> en
+                    la UTN FRC.
+                    <br></br>
+                    Mi habilidad para el pensamiento lógico, combinada con mi{" "}
+                    <strong>creatividad</strong>,<strong> proactividad</strong>{" "}
+                    y capacidad para <strong>aprender</strong> rápidamente, me
+                    ha permitido destacarme tanto en mis estudios universitarios
                     como en mi desarrollo profesional. Paralelamente a mis
                     responsabilidades académicas, me he embarcado en una
-                    constante búsqueda de mejora, participando en cursos y
-                    capacitaciones para afinar mis habilidades como
-                    desarrollador de software.
+                    <strong> constante búsqueda de mejora</strong>, participando
+                    en cursos y capacitaciones para afinar mis habilidades como{" "}
+                    <strong>desarrollador de software</strong>.
                 </p>
+                <ul>
+                    <li>El trabajo en equipo es clave en el desarrollo.</li>
+                    <li>Mantener un ambiente laboral sano es prioridad.</li>
+                    <li>La comunicación efectiva impulsa el crecimiento.</li>
+                    <li>Todo problema es tambien una oportunidad.</li>
+                </ul>
             </div>
 
             <Slider competencias={competencias}></Slider>

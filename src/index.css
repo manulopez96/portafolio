@@ -139,9 +139,10 @@ code {
 .inicio h1{
   width: 100%;
   text-align: left;
+  text-shadow: 0 0 5px #2c00004b;
   height: 5%;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   animation: toRight 1500ms 1;
   animation-fill-mode: forwards;
 }
@@ -169,6 +170,7 @@ code {
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid #000;
+  box-shadow: 0 0 30px #2c00007a;
 }
 .inicio .mask img{
   object-fit: contain;
@@ -183,6 +185,9 @@ code {
   padding: 3% 1%;
 }
 .inicio .descripcion p{
+  text-align: left;
+}
+.inicio .descripcion li{
   text-align: left;
 }
 
@@ -311,10 +316,14 @@ code {
   height: 100%;
   width: 30%;
   font-size: 50px;
+  font-weight: 900;
   border: none;
   background: none;
-  text-shadow: 0 0 5px #dd4343;
   /* top: 10%; */
+}
+.portafolio .contenedor-slider button:hover{
+  color: #d41a1a;
+  text-shadow: 0 0 15px #00000083;
 }
 .portafolio .contenedor-slider button:active p{
   color: 0 0 5px #dd4343;
