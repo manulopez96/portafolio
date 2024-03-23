@@ -231,16 +231,50 @@ code {
 }
 
 /* page de contacto */
+.contact{
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95vw;
+  margin: auto;
+}
+.contact .formulario{
+  min-width: 400px;
+  width: 40%;
+  max-width: 100%;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 15px auto;
+}
+.contact .formulario input{
+  margin: 5px auto;
+  width: 100%;
+  height: 50px;
+}
+.contact .formulario textarea{
+  width: 100%;
+  height: 150px;
+
+}
+.contacto{
+  min-width: 400px;
+  max-width: 100%;
+  margin: auto;
+}
 .contacto a{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 50px -5px;
+  max-width: 100%;
+  margin: 30px -5px;
   overflow: hidden;
   text-decoration: none;
 }
 .contacto a .contenedor-p,
 .contacto a .contenedor-logo{
+  margin: auto 0;
   width: 50%;
   height: 80px;
   position: relative;
@@ -255,13 +289,13 @@ code {
 }
 .contacto a .contenedor-p p{
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 100%;
   /* transform: translate(1500px); */
   transition: all 500ms;
   color: #000;
-  width: 90%;
-  font-size: 20px;
+  width: 100%;
+  font-size: 15px;
   font-weight: bold;
   text-shadow: 0 0 1px #000;
 }
