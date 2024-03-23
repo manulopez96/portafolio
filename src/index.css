@@ -377,17 +377,17 @@ code {
 .portafolio .contenedor-slider .contenedor-img{
   position: relative;
   /* width: 500px; */
-  width: 80vw;
+  width: 75vw;
   /* height: 450px; */
   height: 70vh;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 15px;
+  transition: all 500ms;
 }
 .portafolio .contenedor-slider img{
   object-fit: cover;
   margin: 0 auto;
-  width: 100%;
   height: 100%;
   transition: all 500ms;
   transform: scale(1.0);
@@ -396,6 +396,9 @@ code {
 }
 .portafolio .contenedor-slider .contenedor-img:hover img{
   filter: brightness(0.3);
+  transform: scale(1.8);
+  /* width: 100%; */
+
 
 }
 .portafolio .contenedor-slider .contenedor-img p{
