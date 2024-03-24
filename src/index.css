@@ -250,16 +250,17 @@ code {
 }
 .contact .formulario input{
   margin: 5px auto;
-  width: 100%;
+  width: 90%;
   height: 50px;
 }
 .contact .formulario textarea{
-  width: 100%;
+  width: 90%;
   height: 150px;
 
 }
 .contacto{
   min-width: 400px;
+  width: 50%;
   max-width: 100%;
   margin: auto;
 }
@@ -300,7 +301,7 @@ code {
   text-shadow: 0 0 1px #000;
 }
 .contacto a:hover .contenedor-logo img{
-  right: 20%;
+  right: 30%;
 }
 .contacto a:hover .contenedor-p p{
   left: -10%;

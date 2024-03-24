@@ -4,6 +4,27 @@ export const Portafolio = () => {
     const [contador, setContador] = useState(0);
     const proyectos = [
         {
+            nombre: "Blog de articulos",
+            url: "/img/proyectos/blog.gif",
+            descripcion:
+                "Aplicacion web desarrollada con Node, ReactJS, Express, MongoDB y mas. Permite crear y almacenar articulos.",
+            link: "#",
+        },
+        {
+            nombre: "Numero aleatorio",
+            url: "/img/proyectos/numeroRand.gif",
+            descripcion:
+                "Proyecto que permite generar un numero aleatorio, introduciendo el valor minimo y maximo, desarrollado con JS, html y css. ",
+            link: "#",
+        },
+        {
+            nombre: "Gestion de presupuesto",
+            url: "/img/proyectos/presupuesto.gif",
+            descripcion:
+                "Aplicacion que permite introducir ingresos y egresos de capital, permitiendonos obtener un balance final con los datos introducidos, desarrollado con JS, html y css.",
+            link: "#",
+        },
+        {
             nombre: "Listado de Personas",
             url: "/img/proyectos/proyecto01.png",
             descripcion:
@@ -18,22 +39,8 @@ export const Portafolio = () => {
             link: "#",
         },
         {
-            nombre: "Gestion de presupuesto",
-            url: "/img/proyectos/proyecto03.png",
-            descripcion:
-                "Aplicacion que permite introducir ingresos y egresos de capital, permitiendonos obtener un balance final con los datos introducidos, desarrollado con JS, html y css.",
-            link: "#",
-        },
-        {
-            nombre: "Numero aleatorio",
-            url: "/img/proyectos/proyecto04.png",
-            descripcion:
-                "Proyecto que permite generar un numero aleatorio, introduciendo el valor minimo y maximo, desarrollado con JS, html y css. ",
-            link: "#",
-        },
-        {
             nombre: "LPZ web",
-            url: "/img/proyectos/proyecto05.png",
+            url: "/img/proyectos/portafolio.gif",
             descripcion:
                 "Proyecto personal, esta pagina, desarrollado con reactJS, utlizando hooks, props, eventos , funciones callback y mucho mas!",
             link: "#",
@@ -70,19 +77,19 @@ export const Portafolio = () => {
         <div className="page portafolio">
             <h1>Proyectos</h1>
             <br></br>
-            <div className="contenedor-slider">
+            <div
+                className="contenedor-slider"
+                onKeyDown={handleKeyDown}
+                tabIndex={0}
+            >
                 <button
                     onClick={() => modificarContador("-")}
-                    onKeyDown={handleKeyDown}
-                    tabIndex={0}
                     className="btn-izq"
                 >
                     {"<"}
                 </button>
                 <button
                     onClick={() => modificarContador("+")}
-                    onKeyDown={handleKeyDown}
-                    tabIndex={0}
                     className="btn-der"
                 >
                     {">"}

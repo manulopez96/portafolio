@@ -2,6 +2,7 @@ import React from "react";
 
 export const Contacto = () => {
     let url = "http://localhost:3020/send-email";
+    // let url = "https://lpz-emanuel.netlify.app/send-email";
 
     const enviarForm = async (e) => {
         e.preventDefault();
