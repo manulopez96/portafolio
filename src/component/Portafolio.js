@@ -100,8 +100,8 @@ export const Portafolio = () => {
                         {proyectos[contador].nombre}
                     </p>
                     <p className="descripcion-proyecto">
-                        {proyectos[contador].descripcion}
-l                    </p>
+                        {proyectos[contador].descripcion}{" "}
+                    </p>
                 </div>
             </div>
         </div>

@@ -343,15 +343,15 @@ code {
 /* portafolio con proyectos */
 .portafolio .contenedor-slider{
   position: relative;
-  /* width: 90%; */
   width: 80vw;
   margin: 0 auto;
+  /* border: #000 1px solid; */
 }
 .portafolio .contenedor-slider button{
   margin: auto;
   position: absolute;
   height: 100%;
-  width: 15%;
+  width: 50px;
   font-size: 50px;
   font-weight: 900;
   border: none;
@@ -365,21 +365,23 @@ code {
   color: #d41a1a;
   text-shadow: 0 0 15px #00000083;
 }
+
+/* .portafolio .contenedor-slider .btn-izq,
+.portafolio .contenedor-slider .btn-der{
+  border: #000 1px solid;
+} */
 .portafolio .contenedor-slider .btn-izq{
-  margin-left: 7vw;
-  text-align: left;
-  /* left: 0px; */
+  text-align: center;
+  left: 0px;
 }
 .portafolio .contenedor-slider .btn-der{
-  margin-right: 7vw;
-  text-align: right;
-  /* right: 0px; */
+  text-align: center;
+  right: 0px;
 }
+
 .portafolio .contenedor-slider .contenedor-img{
   position: relative;
-  /* width: 500px; */
-  width: 75vw;
-  /* height: 450px; */
+  width: 80vw;
   height: 70vh;
   margin: 0 auto;
   overflow: hidden;
@@ -390,7 +392,7 @@ code {
   object-fit: cover;
   margin: 0 auto;
   height: 100%;
-  transition: all 500ms;
+  transition: all 1000ms;
   transform: scale(1.0);
   filter: brightness(0.8);
   border-radius: 15px;
@@ -398,9 +400,6 @@ code {
 .portafolio .contenedor-slider .contenedor-img:hover img{
   filter: brightness(0.3);
   transform: scale(1.8);
-  /* width: 100%; */
-
-
 }
 .portafolio .contenedor-slider .contenedor-img p{
   position: absolute;
@@ -428,31 +427,35 @@ code {
 /* responcive */
 /* --------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:1000px){
-}
-.portafolio .contenedor-slider .btn-izq{
-  left: -55px;
-}
-.portafolio .contenedor-slider .btn-der{
-  right: -55px;
+  .portafolio .contenedor-slider .contenedor-img img{
+    margin-left: -5%;
+  }
+  .portafolio .contenedor-slider .contenedor-img{
+    /* width: 350px; */
+    width: 80vw;
+    height: 400px;
+  }
 }
 @media screen and (max-width:800px){
   .portafolio .contenedor-slider .contenedor-img{
     /* width: 350px; */
     width: 80vw;
-    height: 350px;
+    height: 300px;
   }
   .portafolio .contenedor-slider .contenedor-img p{
     font-size: 19px;
   }
+  .portafolio .contenedor-slider .contenedor-img img{
+    margin-left: -5%;
+  }
 }
 @media screen and (max-width:500px){
   .portafolio .contenedor-slider .contenedor-img p{
-    font-size: 15px;
+    font-size: 13px;
   }
   .portafolio .contenedor-slider .contenedor-img{
-    /* width: 250px; */
     width: 80vw;
-    height: 250px;
+    height: 200px;
   }
   .contacto a .contenedor-p p{
     top: 10%;
