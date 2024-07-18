@@ -22,6 +22,9 @@ export const Inicio = () => {
         {
             src: "/img/competencies/mongodb.png",
             nombre: "MongoDB",
+        }, {
+            src: "/img/competencies/sql.png",
+            nombre: "SQL",
         },
         {
             src: "/img/competencies/html.png",

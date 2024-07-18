@@ -4,6 +4,7 @@ export const Slider = ({ competencias }) => {
     return (
         <div className="slider">
             <div className="slide-track">
+                <div className="slide-img"></div>
                 {competencias.map((competencia, index) => (
                     <div className="slide" key={index}>
                         <img

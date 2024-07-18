@@ -5,7 +5,7 @@ export const Curriculum = () => {
         <div className="page curriculum">
             <div className="contenedor-boton">
                 <a
-                    href="/data/curriculumEmanuelLopez.pdf"
+                    href="https://drive.google.com/file/d/179HkW5kZiK5qjSlsXKIuieb_9ib91dVo/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

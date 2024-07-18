@@ -1,3 +1,520 @@
+:root {
+  --color-principal1: #3e347b;
+  --color-principal1-1: #9989ff;
+  --color-principal1-2: #6051c0;
+  --color-principal1-3: #1c1837;
+  --color-principal1-4: #000000;
+
+  --color-principal2: #b13c3c;
+  --color-principal2-1: #ff7777;
+  --color-principal2-2: #ff5555;
+  --color-principal2-3: #4f1b1b;
+  --color-principal2-4: #000000;
+
+  --color-principal3: #308d30;
+  --color-principal3-1: #77ff77;
+  --color-principal3-2: #48d648;
+  --color-principal3-3: #163f16;
+  --color-principal3-4: #000000;
+
+  --color-principal4: #b1983c;
+  --color-principal4-1: #ffe377;
+  --color-principal4-2: #ffdc55;
+  --color-principal4-3: #4f441b;
+  --color-principal4-4: #000000;
+
+  --color-claro: white;
+  --color-none: rgba(255, 255, 255, 0);
+
+  --color-fuente-oscuro: var(--color-principal3-3);
+  --color-fuente-claro: var(--color-claro);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .App {
   text-align: center;
+  background-color: var(--color-principal1-3);
 }
+
+/* header page */
+.header {
+  display: flex;
+  border-bottom: 1px solid #bbb;
+  box-shadow: 0 0 300px #ddd;
+  width: 100%;
+  height: 60px;
+  min-width: 320px;
+  margin-bottom: 30px;
+  background-color: var(--color-claro);
+  z-index: 1000;
+}
+.header .logo {
+  display: flex;
+  margin: auto 15px;
+  height: 50px;
+}
+.header .logo img {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  margin-left: 0px;
+}
+.header .logo h3 {
+  font-size: 20px;
+  height: 25px;
+  width: 190px;
+  margin: auto;
+  margin-left: 0px;
+  /* margin-top: 13px; */
+}
+.header nav {
+  flex: 1 1 auto;
+  width: 100%;
+  margin: auto 15px auto auto;
+}
+.header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  /* margin-top: 15px; */
+  margin-left: auto;
+}
+.drop ul .menu-desplegado a,
+.header nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 15px 20px;
+  font-weight: bold;
+  transition: all 300ms;
+}
+.drop ul .menu-desplegado a:hover,
+.header nav ul li a:hover {
+  color: #d41a1a;
+}
+.active {
+  color: #dd4343;
+}
+
+/* menu drop desṕlegable */
+.drop img {
+  height: 20px;
+  width: 30px;
+}
+.drop ul {
+  background-color: white;
+  padding: 0;
+  margin: auto;
+  margin-right: 2px;
+  margin-bottom: 15px;
+}
+.drop ul .menu-boton {
+  background-color: white;
+  border: none;
+}
+.drop ul .menu-desplegado {
+  border: none;
+  background-color: white;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  margin-right: 0;
+  padding-right: 0px;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+.footer p {
+  color: var(--color-claro);
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer .footer-redes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -2px 5px auto auto;
+}
+.footer .footer-redes a {
+  color: var(--color-claro);
+  margin: auto 7px;
+}
+.footer .footer-redes a:hover {
+  color: var(--color-principal2);
+}
+
+/* inicio page */
+.page {
+  width: 95%;
+  min-height: 550px;
+  margin: auto;
+  background-color: var(--color-none);
+  color: var(--color-fuente-claro);
+}
+.inicio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.inicio h1 {
+  width: 100%;
+  text-align: left;
+  text-shadow: 0 0 5px #2c00004b;
+  height: 5%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  animation: toRight 1500ms 1;
+  animation-fill-mode: forwards;
+}
+@keyframes toRight {
+  0% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(5vw);
+  }
+}
+.inicio .conteiner-mask {
+  width: 30%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.inicio .mask {
+  margin: 5% auto;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--color-none);
+  box-shadow: 0 0 30px var(--color-claro);
+}
+.inicio .mask img {
+  object-fit: contain;
+  width: 100%;
+  margin-top: -10%;
+}
+.inicio .descripcion {
+  margin: 0 auto;
+  min-width: 70%;
+  width: 70%;
+  max-width: 100%;
+  padding: 3% 1%;
+}
+.inicio .descripcion p {
+  text-align: left;
+}
+.inicio .descripcion li {
+  text-align: left;
+}
+
+/* curriculum page */
+.contenedor-boton {
+  display: inline;
+  min-width: 300px;
+  max-width: 40%;
+  height: 80px;
+  margin: 30px auto;
+  padding: 15px 5px;
+  border: 1px solid rgba(92, 88, 88, 0.76);
+  border-radius: 15px;
+  transition: all 300ms;
+  box-shadow: 0 0 5px #bbb;
+  overflow: hidden;
+  background-color: var(--color-claro);
+}
+.contenedor-boton p {
+  display: inline;
+}
+.contenedor-boton a {
+  overflow: hidden;
+  font-size: 25px;
+  padding: 5px 10px;
+  margin: auto 15px;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.contenedor-boton a:hover {
+  color: #d41a1a;
+  font-weight: bold;
+}
+.contenedor-boton a img {
+  height: 45px;
+}
+.visor-pdf {
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* page de contacto */
+.contact {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95vw;
+  margin: auto;
+}
+.contact .formulario {
+  min-width: 400px;
+  width: 40%;
+  max-width: 100%;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 15px auto;
+}
+.contact .formulario input {
+  margin: 5px auto;
+  width: 90%;
+  height: 50px;
+}
+.contact .formulario textarea {
+  width: 90%;
+  height: 150px;
+}
+.contacto {
+  min-width: 400px;
+  width: 50%;
+  max-width: 100%;
+  margin: auto;
+}
+.contacto a {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin: 30px -5px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.contacto a .contenedor-p,
+.contacto a .contenedor-logo {
+  margin: auto 0;
+  width: 50%;
+  height: 80px;
+  position: relative;
+}
+.contacto a .contenedor-logo img {
+  position: absolute;
+  right: 10%;
+  transition: all 800ms 20ms;
+  height: 100%;
+  margin: auto 0;
+  object-fit: contain;
+}
+.contacto a .contenedor-p p {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  /* transform: translate(1500px); */
+  transition: all 500ms;
+  color: #000;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0 0 1px #000;
+}
+.contacto a:hover .contenedor-logo img {
+  right: 30%;
+}
+.contacto a:hover .contenedor-p p {
+  left: -10%;
+}
+
+/* slider */
+.slider {
+  width: 150%;
+  height: auto;
+  margin: auto;
+  margin-top: 70px;
+  overflow: hidden;
+}
+.slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 14);
+  height: 200px;
+}
+.slider .slide {
+  width: 200px;
+  margin: auto 25px;
+}
+.slider .slide img {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 100%;
+  /* height: 80px; */
+  filter: drop-shadow(0 0 2px var(--color-principal1-1));
+  border-radius: 5%;
+}
+.slider .slide p {
+  position: absolute;
+  bottom: 20px;
+  margin: auto;
+}
+
+
+@keyframes scroll {
+  0% {
+    -webkit-animation: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-animation: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
+  }
+}
+
+/* portafolio con proyectos */
+.portafolio .contenedor-slider {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+  /* border: #000 1px solid; */
+}
+.portafolio .contenedor-slider button {
+  margin: auto;
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  font-size: 50px;
+  font-weight: 900;
+  border: none;
+  background: none;
+  color: #0000005b;
+  z-index: 10;
+  transition: 300ms;
+  overflow: hidden;
+}
+.portafolio .contenedor-slider button:hover {
+  color: #d41a1a;
+  text-shadow: 0 0 15px #00000083;
+}
+
+/* .portafolio .contenedor-slider .btn-izq,
+.portafolio .contenedor-slider .btn-der{
+  border: #000 1px solid;
+} */
+.portafolio .contenedor-slider .btn-izq {
+  text-align: center;
+  left: 0px;
+}
+.portafolio .contenedor-slider .btn-der {
+  text-align: center;
+  right: 0px;
+}
+
+.portafolio .contenedor-slider .contenedor-img {
+  position: relative;
+  width: 80vw;
+  height: 70vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 500ms;
+}
+.portafolio .contenedor-slider img {
+  object-fit: cover;
+  margin: 0 auto;
+  height: 100%;
+  transition: all 1000ms;
+  transform: scale(1);
+  filter: brightness(0.8);
+  border-radius: 15px;
+}
+.portafolio .contenedor-slider .contenedor-img:hover img {
+  filter: brightness(0.3);
+  transform: scale(1.8);
+}
+.portafolio .contenedor-slider .contenedor-img p {
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  width: 80%;
+  z-index: 1;
+  color: transparent;
+  font-size: 25px;
+  transition: all 500ms;
+}
+.portafolio .contenedor-slider .contenedor-img .nombre-proyecto {
+  top: 20%;
+}
+.portafolio .contenedor-slider .contenedor-img .descripcion-proyecto {
+  top: 40%;
+}
+.portafolio .contenedor-slider .contenedor-img:hover .nombre-proyecto,
+.portafolio .contenedor-slider .contenedor-img:hover .descripcion-proyecto {
+  color: #fff;
+  text-shadow: 0 0 20px #000;
+}
+
+/* responcive */
+/* --------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1000px) {
+  .portafolio .contenedor-slider .contenedor-img img {
+    margin-left: -5%;
+  }
+  .portafolio .contenedor-slider .contenedor-img {
+    /* width: 350px; */
+    width: 80vw;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portafolio .contenedor-slider .contenedor-img {
+    /* width: 350px; */
+    width: 80vw;
+    height: 300px;
+  }
+  .portafolio .contenedor-slider .contenedor-img p {
+    font-size: 19px;
+  }
+  .portafolio .contenedor-slider .contenedor-img img {
+    margin-left: -5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .portafolio .contenedor-slider .contenedor-img p {
+    font-size: 13px;
+  }
+  .portafolio .contenedor-slider .contenedor-img {
+    width: 80vw;
+    height: 200px;
+  }
+  .contacto a .contenedor-p p {
+    top: 10%;
+    width: 90%;
+    font-size: 15px;
+  }
+  .contacto a:hover .contenedor-logo img {
+    right: 20%;
+  }
+  .contacto a:hover .contenedor-p p {
+    left: -10%;
+  }
+}
+@media screen and (max-width: 350px) {
+}
+/* ------------------------------------------------------------------------------------------------------------ */
