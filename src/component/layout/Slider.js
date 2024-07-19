@@ -7,20 +7,24 @@ export const Slider = ({ competencias }) => {
                 <div className="slide-img"></div>
                 {competencias.map((competencia, index) => (
                     <div className="slide" key={index}>
-                        <img
-                            alt={competencia.nombre}
-                            src={competencia.src}
-                        ></img>
+                        <div className="slide-img">
+                            <img
+                                alt={competencia.nombre}
+                                src={competencia.src}
+                            ></img>
+                        </div>
                         <p>{competencia.nombre}</p>
                     </div>
                 ))}
 
                 {competencias.map((competencia, index) => (
                     <div className="slide" key={index}>
-                        <img
-                            alt={competencia.nombre}
-                            src={competencia.src}
-                        ></img>
+                        <div className="slide-img">
+                            <img
+                                alt={competencia.nombre}
+                                src={competencia.src}
+                            ></img>
+                        </div>
                         <p>{competencia.nombre}</p>
                     </div>
                 ))}

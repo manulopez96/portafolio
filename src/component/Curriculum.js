@@ -21,7 +21,7 @@ export const Curriculum = () => {
                     title="curriculum"
                     src="/data/curriculumEmanuelLopez.pdf"
                     width="100%"
-                    height="500px"
+                    height="1200px"
                 ></iframe>
             </div>
         </div>

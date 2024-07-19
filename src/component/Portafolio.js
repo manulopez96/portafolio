@@ -1,109 +1,85 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export const Portafolio = () => {
-    const [contador, setContador] = useState(0);
     const proyectos = [
         {
-            nombre: "Blog de articulos",
-            url: "/img/proyectos/blog.gif",
+            id: 1,
+            nombre: "Simple Note",
+            url: "/img/proyectos/simpleNote.webm",
             descripcion:
-                "Aplicacion web desarrollada con Node, ReactJS, Express, MongoDB y mas. Permite crear y almacenar articulos.",
+                "Aplicación web desarrollada con Node.js, ReactJS, Express, SQLite, Sequelize, enrutamiento y Axios. Este proyecto fue un trabajo colaborativo desarrollado por un equipo de tres personas, en el cual asumí la responsabilidad completa del desarrollo del front-end, además de implementar algunas funcionalidades relacionadas con la base de datos y la autenticación de usuarios mediante JWT.",
             link: "#",
         },
         {
+            id: 2,
             nombre: "Numero aleatorio",
-            url: "/img/proyectos/numeroRand.gif",
+            url: "/img/proyectos/numeroRand.webm",
             descripcion:
-                "Proyecto que permite generar un numero aleatorio, introduciendo el valor minimo y maximo, desarrollado con JS, html y css. ",
+                "Proyecto desarrollado con JavaScript, HTML y CSS que permite generar un número aleatorio al introducir un valor mínimo y máximo. La aplicación valida los datos ingresados para evitar errores.",
             link: "#",
         },
         {
+            id: 3,
             nombre: "Gestion de presupuesto",
-            url: "/img/proyectos/presupuesto.gif",
+            url: "/img/proyectos/presupuesto.webm",
             descripcion:
-                "Aplicacion que permite introducir ingresos y egresos de capital, permitiendonos obtener un balance final con los datos introducidos, desarrollado con JS, html y css.",
+                "Aplicación desarrollada con JavaScript, HTML y CSS que permite la introducción de ingresos y egresos de capital, facilitando así la obtención de un balance final basado en los datos ingresados.",
             link: "#",
         },
         {
-            nombre: "Listado de Personas",
-            url: "/img/proyectos/proyecto01.png",
+            id: 4,
+            nombre: "Price Checklist",
+            url: "/img/proyectos/PriceChecklist.webm",
             descripcion:
-                "Aplicacion que permite introducir personas a una lista, armado un array de objetos para mostrarlo dinamicamente en la pantalla.",
+                "Aplicación web desarrollada en ReactJS que permite generar una lista de productos con sus respectivos precios y cantidades. Esta lista se almacena en el local storage del dispositivo, lo que garantiza su persistencia.",
             link: "#",
         },
         {
-            nombre: "Reloj digital",
-            url: "/img/proyectos/proyecto02.png",
-            descripcion:
-                "Proyecto sencillo en Javascript, con manejo del DOM y utlizacion de eventos.",
-            link: "#",
-        },
-        {
+            id: 5,
             nombre: "LPZ web",
-            url: "/img/proyectos/portafolio.gif",
+            url: "/img/proyectos/portafolio.webm",
             descripcion:
-                "Proyecto personal, esta pagina, desarrollado con reactJS, utlizando hooks, props, eventos , funciones callback y mucho mas!",
+                "Proyecto personal desarrollado utilizando Node.js, Express y ReactJS. La aplicación emplea hooks, enrutamiento, props, eventos, funciones callback y Axios. Además, cuenta con un sistema de envío de correos.",
             link: "#",
         },
     ];
-    const modificarContador = (op = "+") => {
-        if (op === "-") {
-            if (contador > 0) {
-                setContador(contador - 1);
-            } else {
-                setContador(proyectos.length - 1);
-            }
-        } else if (op === "+") {
-            if (contador < proyectos.length - 1) {
-                setContador(contador + 1);
-            } else {
-                setContador(0);
-            }
-        }
-        //  console.log(contador);
-    };
 
-    const handleKeyDown = (e) => {
-        if (e.keyCode === 37) {
-            modificarContador("-");
-        }
-        if (e.keyCode === 39) {
-            modificarContador("+");
-        }
-    };
-
-    useEffect(() => {}, [contador]);
     return (
         <div className="page portafolio">
             <h1>Proyectos</h1>
             <br></br>
-            <div
-                className="contenedor-slider"
-                onKeyDown={handleKeyDown}
-                tabIndex={0}
-            >
-                <button
-                    onClick={() => modificarContador("-")}
-                    className="btn-izq"
-                >
-                    {"<"}
-                </button>
-                <button
-                    onClick={() => modificarContador("+")}
-                    className="btn-der"
-                >
-                    {">"}
-                </button>
-                <div className="contenedor-img">
-                    <img alt="" src={proyectos[contador].url}></img>
-                    <p className="nombre-proyecto">
-                        {proyectos[contador].nombre}
-                    </p>
-                    <p className="descripcion-proyecto">
-                        {proyectos[contador].descripcion}{" "}
-                    </p>
-                </div>
-            </div>
+            {proyectos &&
+                proyectos.map((proyecto, index) => {
+                    return (
+                        <div
+                            key={index}
+                            className={
+                                index % 2
+                                    ? "contenedor-proyecto-izq contenedor-proyecto flex"
+                                    : "contenedor-proyecto-der contenedor-proyecto flex"
+                            }
+                        >
+                            <div className={"contenedor-imagen"}>
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    alt={proyecto.nombre}
+                                    src={proyecto.url}
+                                ></video>
+                            </div>
+                            <div className={"contenedor-descripcion"}>
+                                <p className="nombre-proyecto">
+                                    {proyecto.nombre}
+                                </p>
+                                <p className="descripcion-proyecto">
+                                    {proyecto.descripcion}{" "}
+                                </p>
+                            </div>
+                        </div>
+                    );
+                })}
         </div>
     );
 };
