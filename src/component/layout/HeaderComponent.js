@@ -25,12 +25,14 @@ export const HeaderComponent = () => {
     }, [widthScreen]);
     return (
         <header className="header">
-            <div className="logo">
-                {/* <img src="/img/iconos/lobo.png"></img> */}
-                {/* <img alt="logo" src="/img/iconos/saturno.png"></img> */}
-                <img alt="logo" src="/img/iconos/saturno.gif"></img>
+            
+            <NavLink className="logo" to="">
+                <img
+                    alt="logo"
+                    src="/img/iconos/saturno.gif"
+                ></img>
                 <h3>López D. Emanuel</h3>
-            </div>
+            </NavLink>
             {widthScreen > 800 ? (
                 <nav>
                     <ul>
@@ -38,7 +40,7 @@ export const HeaderComponent = () => {
                             <NavLink
                                 to="/inicio"
                                 className={({ isActive }) =>
-                                    isActive ? "active" : ""
+                                    isActive ? "active" : "no-active"
                                 }
                             >
                                 Inicio
@@ -48,7 +50,7 @@ export const HeaderComponent = () => {
                             <NavLink
                                 to="/portafolio"
                                 className={({ isActive }) =>
-                                    isActive ? "active" : ""
+                                    isActive ? "active" : "no-active"
                                 }
                             >
                                 Portafolio
@@ -58,7 +60,7 @@ export const HeaderComponent = () => {
                             <NavLink
                                 to="/curriculum"
                                 className={({ isActive }) =>
-                                    isActive ? "active" : ""
+                                    isActive ? "active" : "no-active"
                                 }
                             >
                                 Curriculum
@@ -68,7 +70,7 @@ export const HeaderComponent = () => {
                             <NavLink
                                 to="/contacto"
                                 className={({ isActive }) =>
-                                    isActive ? "active" : ""
+                                    isActive ? "active" : "no-active"
                                 }
                             >
                                 Contacto
@@ -81,7 +83,10 @@ export const HeaderComponent = () => {
                     <ul>
                         <Dropdown isOpen={drop} toggle={openCloseDrop}>
                             <DropdownToggle className="menu-boton">
-                                <img alt="logo-menu" src="/img/iconos/menu.png"></img>
+                                <img
+                                    alt="logo-menu"
+                                    src="/img/iconos/menu.png"
+                                ></img>
                             </DropdownToggle>
                             <DropdownMenu className="menu-desplegado">
                                 <DropdownItem>
@@ -94,30 +99,36 @@ export const HeaderComponent = () => {
                                         Inicio
                                     </NavLink>
                                 </DropdownItem>
-                                <DropdownItem><NavLink
-                                to="/portafolio"
-                                className={({ isActive }) =>
-                                    isActive ? "active" : ""
-                                }
-                            >
-                                Portafolio
-                            </NavLink></DropdownItem>
-                                <DropdownItem><NavLink
-                                to="/curriculum"
-                                className={({ isActive }) =>
-                                    isActive ? "active" : ""
-                                }
-                            >
-                                Curriculum
-                            </NavLink></DropdownItem>
-                                <DropdownItem><NavLink
-                                to="/contacto"
-                                className={({ isActive }) =>
-                                    isActive ? "active" : ""
-                                }
-                            >
-                                Contacto
-                            </NavLink></DropdownItem>
+                                <DropdownItem>
+                                    <NavLink
+                                        to="/portafolio"
+                                        className={({ isActive }) =>
+                                            isActive ? "active" : "no-active"
+                                        }
+                                    >
+                                        Portafolio
+                                    </NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink
+                                        to="/curriculum"
+                                        className={({ isActive }) =>
+                                            isActive ? "active" : "no-active"
+                                        }
+                                    >
+                                        Curriculum
+                                    </NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink
+                                        to="/contacto"
+                                        className={({ isActive }) =>
+                                            isActive ? "active" : "no-active"
+                                        }
+                                    >
+                                        Contacto
+                                    </NavLink>
+                                </DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
                     </ul>

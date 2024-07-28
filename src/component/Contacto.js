@@ -124,7 +124,12 @@ export const Contacto = () => {
                         name="contenido"
                         placeholder="Contenido"
                     ></textarea>
-                    <input type="submit" value="Enviar" placeholder=""></input>
+                    <input
+                        className="enviar"
+                        type="submit"
+                        value={"Enviar"}
+                        placeholder=""
+                    ></input>
                 </form>
             </div>
         </div>

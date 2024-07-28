@@ -47,6 +47,7 @@ code {
 .App {
     text-align: center;
     background-color: var(--color-principal1-3);
+    overflow: hidden;
 }
 
 /* header page */
@@ -65,6 +66,9 @@ code {
     display: flex;
     margin: auto 15px;
     height: 50px;
+    border: none;
+    text-decoration: none;
+    border: none;
 }
 .header .logo img {
     height: 50px;
@@ -78,7 +82,8 @@ code {
     width: 190px;
     margin: auto;
     margin-left: 0px;
-    /* margin-top: 13px; */
+    color: #000;
+    text-decoration: none;
 }
 .header nav {
     flex: 1 1 auto;
@@ -100,14 +105,23 @@ code {
     text-decoration: none;
     margin: 15px 20px;
     font-weight: bold;
-    transition: all 300ms;
+    transition: all 200ms;
+    text-shadow: 0 0 1px var(--color-fuente-oscuro);
 }
 .drop ul .menu-desplegado a:hover,
 .header nav ul li a:hover {
-    color: #d41a1a;
+    color: var(--color-principal2);
+}
+.no-active {
+    color: var(--color-principal1-2);
 }
 .active {
-    color: #dd4343;
+    color: var(--color-principal2-2);
+    border-bottom: 1px solid var(--color-principal2-1);
+    padding-bottom: 7px;
+}
+.active:hover {
+    border-bottom: 1px solid var(--color-principal2);
 }
 
 /* menu drop desṕlegable */
@@ -253,9 +267,10 @@ code {
     margin: auto 15px;
     text-decoration: none;
     transition: all 300ms;
+    color: var(--color-principal1-2);
 }
 .contenedor-boton a:hover {
-    color: #d41a1a;
+    /* color: var(--color-principal2-2); */
     font-weight: bold;
 }
 .contenedor-boton a img {
@@ -312,9 +327,10 @@ code {
 .contacto a .contenedor-logo {
     margin: auto 0;
     width: 50%;
-    height: 80px;
+    height: 70px;
     position: relative;
     color: var(--color-claro);
+    filter: drop-shadow(0 0 2px var(--color-principal1-1));
 }
 .contacto a .contenedor-logo img {
     position: absolute;
@@ -346,6 +362,18 @@ code {
 }
 .contacto a:hover .contenedor-p p {
     left: -10%;
+}
+
+.formulario .enviar {
+    background-color: var(--color-principal3);
+    color: var(--color-claro);
+    border: 0;
+    border-radius: 5px;
+}
+.formulario .enviar:hover {
+    transition: all 200ms;
+    box-shadow: 0 0 5px var(--color-principal3-2);
+    font-weight: bold;
 }
 
 /* slider */
