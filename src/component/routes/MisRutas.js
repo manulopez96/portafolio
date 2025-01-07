@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import React, { useRef } from "react";
+import { BrowserRouter, Link } from "react-router-dom";
 import { HeaderComponent } from "../layout/HeaderComponent";
 import { FooterComponent } from "../layout/FooterComponent";
 import { Inicio } from "../Inicio";
@@ -8,39 +8,29 @@ import { Curriculum } from "../Curriculum";
 import { Contacto } from "../Contacto";
 
 export const MisRutas = () => {
-    return (
-        <BrowserRouter>
-            {/* El header de la app */}
-            <HeaderComponent></HeaderComponent>
+  const sectionsRef = useRef({});
 
-            {/* El contenido de la app */}
-            <Routes>
-                <Route
-                    path="/"
-                    element={<Navigate to={"/inicio"}></Navigate>}
-                ></Route>
-                <Route path="/inicio" element={<Inicio></Inicio>}></Route>
-                <Route
-                    path="/portafolio"
-                    element={<Portafolio></Portafolio>}
-                ></Route>
-                <Route
-                    path="/curriculum"
-                    element={<Curriculum></Curriculum>}
-                ></Route>
-                <Route path="/contacto" element={<Contacto></Contacto>}></Route>
-                <Route
-                    path="*"
-                    element={
-                        <div className="page">
-                            <img src="/img/iconos/404.gif" alt="gif"></img>
-                        </div>
-                    }
-                ></Route>
-            </Routes>
+  const scrollToSection = (section) => {
+    if (sectionsRef.current[section]) {
+      sectionsRef.current[section].scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.log("no section selected");
+    }
+  };
 
-            {/* El footer de la app */}
-            <FooterComponent></FooterComponent>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      {/* El header de la app con scrollToSection */}
+      <HeaderComponent scrollToSection={scrollToSection} />
+
+      {/* El contenido de la app */}
+      <Inicio ref={(el) => (sectionsRef.current["inicio"] = el)} />
+      <Portafolio ref={(el) => (sectionsRef.current["portafolio"] = el)} />
+      <Curriculum ref={(el) => (sectionsRef.current["curriculum"] = el)} />
+      <Contacto ref={(el) => (sectionsRef.current["contacto"] = el)} />
+
+      {/* El footer de la app */}
+      <FooterComponent />
+    </BrowserRouter>
+  );
 };
