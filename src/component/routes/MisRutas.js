@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { HeaderComponent } from "../layout/HeaderComponent";
 import { FooterComponent } from "../layout/FooterComponent";
 import { Inicio } from "../Inicio";
