@@ -2,8 +2,8 @@
   --color-principal1: #3e347b;
   --color-principal1-1: #9989ff;
   --color-principal1-2: #6051c0;
-  --color-principal1-3: #1c1837;
-  --color-principal1-4: hsla(248, 41%, 34%, 0.2);
+  --color-principal1-3: #0f0b27;
+  --color-principal1-4: hsla(247, 52%, 25%, 0.2);
 
   --color-principal2: #b13c3c;
   --color-principal2-1: #ff7777;
@@ -169,6 +169,7 @@ code {
 
 /* inicio page */
 .page {
+  padding-top: 55px;
   width: 95%;
   min-height: 550px;
   margin: auto;

@@ -31,7 +31,9 @@ export const Contacto = React.forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="page contact">
-      <div className="contacto">
+      <h2>Contacto</h2>
+      <br></br>
+      {/* <div className="contacto">
         <a href="mailto:d.manu.lopez@gmail.com" rel="noreferrer">
           <div className="contenedor-logo">
             <img alt="logo-linkedin" src="/img/iconos/gmail.png"></img>
@@ -88,7 +90,7 @@ export const Contacto = React.forwardRef((props, ref) => {
             <p>¿Quieres escribirme por whatsapp?</p>
           </div>
         </a>
-      </div>
+      </div> */}
       <div className="formulario">
         <form onSubmit={enviarForm}>
           <h3>Puedes escribirme</h3>

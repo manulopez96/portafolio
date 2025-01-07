@@ -3,6 +3,8 @@ import React from "react";
 export const Curriculum = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} className="page curriculum">
+      <h2>CV</h2>
+      <br></br>
       <div className="contenedor-boton">
         <a
           href="https://drive.google.com/file/d/179HkW5kZiK5qjSlsXKIuieb_9ib91dVo/view?usp=sharing"
