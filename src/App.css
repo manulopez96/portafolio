@@ -2,7 +2,7 @@
   --color-principal1: #3e347b;
   --color-principal1-1: #9989ff;
   --color-principal1-2: #6051c0;
-  --color-principal1-3: #0f0b27;
+  --color-principal1-3: #09051d;
   --color-principal1-4: hsla(247, 52%, 25%, 0.2);
 
   --color-principal2: #b13c3c;
@@ -49,7 +49,11 @@ code {
   background-color: var(--color-principal1-3);
   overflow: hidden;
 }
-
+h2 {
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+}
 /* header page */
 .header {
   display: flex;
@@ -60,7 +64,7 @@ code {
   min-width: 320px;
   margin-bottom: 30px;
   background-color: var(--color-claro);
-  background-color: #fffd;
+  background-color: #ffffffea;
   z-index: 1000;
   position: fixed;
   margin-bottom: 200px;
@@ -99,7 +103,7 @@ code {
   margin-left: auto;
 }
 
-.drop ul .menu-desplegado button,
+.drop ul .menu-desplegado a,
 .header nav ul li button {
   font-size: 20px;
   text-decoration: none;
@@ -108,12 +112,14 @@ code {
   text-shadow: 0 0 1px var(--color-fuente-oscuro);
   border: none;
   background-color: #0000;
-
-  /* font-weight: bolder; */
+  font-weight: 500;
+  overflow: hidden;
 }
-.drop ul .menu-desplegado button:hover,
+.drop ul .menu-desplegado a:hover,
 .header nav ul li button:hover {
   color: var(--color-principal2);
+  font-weight: 600;
+  background-color: #0000;
 }
 
 /* menu drop desṕlegable */
@@ -128,12 +134,12 @@ code {
   margin-bottom: 15px;
 }
 .drop ul .menu-boton {
-  background-color: white;
+  background-color: #0000;
   border: none;
 }
 .drop ul .menu-desplegado {
-  border: none;
-  background-color: white;
+  border: 1px solid var(--color-principal2);
+  background-color: #ffffffee;
   border: 1px solid #eee;
   margin-top: 10px;
   margin-right: 0;
@@ -276,20 +282,16 @@ code {
 
 /* page de contacto */
 .contact {
-  display: flex;
-  display: flex;
-  flex-wrap: wrap;
   width: 95vw;
   margin: auto;
 }
 .contact .formulario {
-  min-width: 400px;
-  width: 40%;
+  min-width: 320px;
+  width: 80%;
   max-width: 100%;
-  display: flex;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
   margin: 15px auto;
 }
 .contact .formulario input {

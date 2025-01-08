@@ -46,7 +46,7 @@ export const Portafolio = React.forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="page portafolio">
-      <h1>Proyectos</h1>
+      <h2>Proyectos</h2>
       <br></br>
       {proyectos &&
         proyectos.map((proyecto, index) => {
