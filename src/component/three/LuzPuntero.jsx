@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+//import { OrbitControls } from "@react-three/drei";
 import { Texto } from "./Texto";
 
 export const LuzPuntero = () => {
