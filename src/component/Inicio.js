@@ -1,5 +1,6 @@
 import React from "react";
 import { Slider } from "./layout/Slider";
+import { LuzPuntero } from "./three/LuzPuntero";
 
 export const Inicio = React.forwardRef((props, ref) => {
   const competencias = [
@@ -82,6 +83,10 @@ export const Inicio = React.forwardRef((props, ref) => {
       </div>
 
       <Slider competencias={competencias}></Slider>
+      <br></br>
+      <br></br>
+      <br></br>
+      <LuzPuntero></LuzPuntero>
     </div>
   );
 });
