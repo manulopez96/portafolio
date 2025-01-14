@@ -1,4 +1,4 @@
-import { OrbitControls, Environment } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 
@@ -17,7 +17,6 @@ function smoothMove(start, end, alpha) {
 
 function ModifyCamera({ x = -1 }) {
   const { camera } = useThree();
-  const [cameraPosition, setCameraPosition] = useState(x);
 
   useFrame(() => {
     if (camera) {
