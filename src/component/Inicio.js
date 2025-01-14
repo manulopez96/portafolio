@@ -89,7 +89,7 @@ export const Inicio = React.forwardRef((props, ref) => {
       <LuzPuntero></LuzPuntero>
       <br></br>
       <br></br>
-      <Environmenty></Environmenty>
+      {/*<Environmenty></Environmenty>*/}
     </div>
   );
 });
