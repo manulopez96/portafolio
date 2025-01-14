@@ -179,18 +179,19 @@ h2 {
   color: var(--color-principal2);
 }
 
-/* inicio page */
 .page {
-  padding-top: 55px;
+  padding-top: 10px;
   width: 95%;
   min-height: 550px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 10px;
   background-color: var(--color-none);
   color: var(--color-fuente-claro);
 }
+
+/* inicio page */
 .inicio {
-  padding-top: 0px;
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }

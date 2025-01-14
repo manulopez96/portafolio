@@ -15,6 +15,7 @@ export const Texto = ({ wDisplay }) => {
     <>
       <Text3D
         font="/fonts/Montserrat_Regular.json"
+        // font="/fonts/Rockybilly_Regular.json"
         //font="/fonts/Mouse_Memoirs_Regular.json"
         // font="/fonts/QuigleyWiggly_Regular.json"
         // font="/fonts/Scriptina-Alternates-Regular.json"

@@ -12,9 +12,19 @@ export const MisRutas = () => {
 
   const scrollToSection = (section) => {
     if (sectionsRef.current[section]) {
-      sectionsRef.current[section].scrollIntoView({ behavior: "smooth" });
+      const sectionElement = sectionsRef.current[section];
+      const menuHeight = 60; // Altura del menú fijo
+
+      // Calcula el desplazamiento compensado
+      const offsetTop = sectionElement.offsetTop - menuHeight;
+
+      // Realiza el desplazamiento con smooth scroll
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
     } else {
-      console.log("no section selected");
+      console.log("No section selected");
     }
   };
 
