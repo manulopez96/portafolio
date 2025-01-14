@@ -1,7 +1,7 @@
 import React from "react";
 import { Slider } from "./layout/Slider";
 import { LuzPuntero } from "./three/LuzPuntero";
-import Environmenty from "./three/Environmenty";
+//import Environmenty from "./three/Environmenty";
 
 export const Inicio = React.forwardRef((props, ref) => {
   const competencias = [
