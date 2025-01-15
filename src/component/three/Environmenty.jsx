@@ -34,6 +34,20 @@ export default function Environmenty() {
   const [distance, setDistance] = useState(1);
   const [alto, setAlto] = useState(100);
 
+  const [enableControls, setEnableControls] = useState(false);
+  const pressTimer = useRef(null);
+
+  const handlePointerDown = () => {
+    pressTimer.current = setTimeout(() => {
+      setEnableControls(true); // Activa los controles después de 1 segundo
+    }, 2000); // 1 segundo
+  };
+
+  const handlePointerUp = () => {
+    clearTimeout(pressTimer.current); // Cancela el temporizador si se suelta antes de 1 segundo
+    setEnableControls(false); // Desactiva los controles al soltar
+  };
+
   useEffect(() => {
     const calculateDistance = () => {
       if (placasRef.current) {
@@ -57,14 +71,16 @@ export default function Environmenty() {
   return (
     <Canvas
       ref={placasRef}
+      onPointerDown={handlePointerDown}
+      onPointerUp={handlePointerUp}
       style={{ width: "150vw", height: "110vh", overflow: "visible" }}
     >
       <Environment
         files="/hdr/tech.exr"
         //background
       />
-      {/* <OrbitControls /> */}
-      <OrbitControls enableZoom={false} />
+      {/* OrbitControls habilitado dinámicamente */}
+      {enableControls && <OrbitControls enableZoom={false} />}
 
       <ModifyCamera x={distance / alto} />
 

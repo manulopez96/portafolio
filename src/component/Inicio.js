@@ -63,23 +63,32 @@ export const Inicio = React.forwardRef((props, ref) => {
       <div className="descripcion">
         <p>
           Soy estudiante de <strong>Ingeniería en Sistemas</strong> en la UTN
-          FRC.
-          <br></br>
-          Mi habilidad para el pensamiento lógico, combinada con mi{" "}
-          <strong>creatividad</strong>,<strong> proactividad</strong> y
-          capacidad para <strong>aprender</strong> rápidamente, me ha permitido
-          destacarme tanto en mis estudios universitarios como en mi desarrollo
-          profesional. Paralelamente a mis responsabilidades académicas, me he
-          embarcado en una
-          <strong> constante búsqueda de mejora</strong>, participando en cursos
-          y capacitaciones para afinar mis habilidades como{" "}
-          <strong>desarrollador de software</strong>.
+          FRC y apasionado por el desarrollo de software.
+          <br />
+          Mi combinación de <strong>pensamiento lógico</strong>,{" "}
+          <strong>creatividad</strong> y <strong>proactividad</strong>, junto
+          con una rápida capacidad de aprendizaje, me ha permitido sobresalir
+          tanto en el ámbito académico como profesional. Además de mis estudios
+          universitarios, mantengo un compromiso constante con mi desarrollo
+          personal, participando en cursos y capacitaciones que fortalecen mis
+          habilidades como <strong>desarrollador de software</strong>.
         </p>
         <ul>
-          <li>El trabajo en equipo es clave en el desarrollo.</li>
-          <li>Mantener un ambiente laboral sano es prioridad.</li>
-          <li>La comunicación efectiva impulsa el crecimiento.</li>
-          <li>Todo problema es tambien una oportunidad.</li>
+          <li>
+            Valoro el <strong>trabajo en equipo</strong> como elemento esencial
+            para el éxito en proyectos.
+          </li>
+          <li>
+            Promuevo un <strong>ambiente laboral saludable</strong> que fomente
+            la colaboración.
+          </li>
+          <li>
+            Creo en la <strong>comunicación efectiva</strong> como herramienta
+            para el crecimiento.
+          </li>
+          <li>
+            Veo cada desafío como una <strong>oportunidad de mejora</strong>.
+          </li>
         </ul>
       </div>
 
