@@ -1,52 +1,52 @@
 import React from "react";
 import { Slider } from "./layout/Slider";
 import { LuzPuntero } from "./three/LuzPuntero";
-//import Environmenty from "./three/Environmenty";
+import Environmenty from "./three/Environmenty";
 
 export const Inicio = React.forwardRef((props, ref) => {
   const competencias = [
     {
-      src: "/img/competencies/python.png",
+      src: "/img/competencies/python.webp",
       nombre: "Python",
     },
     {
-      src: "/img/competencies/react.png",
+      src: "/img/competencies/react.webp",
       nombre: "React",
     },
     {
-      src: "/img/competencies/nodejs.png",
+      src: "/img/competencies/nodejs.webp",
       nombre: "Node",
     },
     {
-      src: "/img/competencies/js.png",
+      src: "/img/competencies/js.webp",
       nombre: "Javascript",
     },
     {
-      src: "/img/competencies/mongodb.png",
+      src: "/img/competencies/mongodb.webp",
       nombre: "MongoDB",
     },
     {
-      src: "/img/competencies/sql.png",
+      src: "/img/competencies/sql.webp",
       nombre: "SQL",
     },
     {
-      src: "/img/competencies/html.png",
+      src: "/img/competencies/html.webp",
       nombre: "HTML",
     },
     {
-      src: "/img/competencies/css.png",
+      src: "/img/competencies/css.webp",
       nombre: "CSS",
     },
     {
-      src: "/img/competencies/linux.png",
+      src: "/img/competencies/linux.webp",
       nombre: "Linux",
     },
     {
-      src: "/img/competencies/angular.png",
+      src: "/img/competencies/angular.webp",
       nombre: "Angular",
     },
     {
-      src: "/img/competencies/expressjs.png",
+      src: "/img/competencies/expressjs.webp",
       nombre: "Express",
     },
   ];
@@ -57,7 +57,7 @@ export const Inicio = React.forwardRef((props, ref) => {
       <br></br>
       <div className="conteiner-mask">
         <div className="mask">
-          <img alt="pictureprofile" src="/img/profile/foto1.jpeg"></img>
+          <img alt="pictureprofile" src="/img/profile/foto2.webp"></img>
         </div>
       </div>
       <div className="descripcion">
@@ -89,7 +89,7 @@ export const Inicio = React.forwardRef((props, ref) => {
       <LuzPuntero></LuzPuntero>
       <br></br>
       <br></br>
-      {/*<Environmenty></Environmenty>*/}
+      <Environmenty></Environmenty>
     </div>
   );
 });

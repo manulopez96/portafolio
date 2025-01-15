@@ -1,4 +1,4 @@
-import { Environment } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 
@@ -59,8 +59,12 @@ export default function Environmenty() {
       ref={placasRef}
       style={{ width: "150vw", height: "110vh", overflow: "visible" }}
     >
-      <Environment files="/hdr/NightSkyHDRI008_4K-HDR.exr" />
+      <Environment
+        files="/hdr/tech.exr"
+        //background
+      />
       {/* <OrbitControls /> */}
+      <OrbitControls enableZoom={false} />
 
       <ModifyCamera x={distance / alto} />
 
