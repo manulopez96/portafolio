@@ -13,7 +13,6 @@ export const LuzPuntero = () => {
     // Normalizar las coordenadas del puntero a -1 y 1
     const x = (clientX / window.innerWidth) * 16 - 8;
     const y = -(clientY / window.innerHeight) * 8 + 4;
-    console.log(x, y);
     setMousePosition({ x, y });
   };
 

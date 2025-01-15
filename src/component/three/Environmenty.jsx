@@ -21,7 +21,7 @@ function ModifyCamera({ x = -1 }) {
   useFrame(() => {
     if (camera) {
       // Interpolación suave de la posición de la cámara
-      const smoothedPosition = smoothMove(camera.position.x, x, 0.05); // '0.1' es la velocidad de interpolación
+      const smoothedPosition = smoothMove(camera.position.x, x, 0.03); // '0.1' es la velocidad de interpolación
       camera.position.set(smoothedPosition, 0, 7);
       camera.lookAt(0, -0.3, 0);
     }
@@ -34,13 +34,15 @@ export default function Environmenty() {
   const [distance, setDistance] = useState(1);
   const [alto, setAlto] = useState(100);
 
+  const [escala, setEscala] = useState(window.innerWidth / 3000 + 0.7);
+
   const [enableControls, setEnableControls] = useState(false);
   const pressTimer = useRef(null);
 
   const handlePointerDown = () => {
     pressTimer.current = setTimeout(() => {
       setEnableControls(true); // Activa los controles después de 1 segundo
-    }, 3000); // 1000 = 1 segundo
+    }, 2000); // 1000 = 1 segundo
   };
 
   const handlePointerUp = () => {
@@ -49,6 +51,8 @@ export default function Environmenty() {
   };
 
   useEffect(() => {
+    setEscala(window.innerWidth / 3000 + 0.8);
+
     const calculateDistance = () => {
       if (placasRef.current) {
         const rect = placasRef.current.getBoundingClientRect();
@@ -74,7 +78,11 @@ export default function Environmenty() {
       onClick={handlePointerDown}
       onPointerDown={handlePointerDown}
       onPointerUp={handlePointerUp}
-      style={{ width: "150vw", height: "110vh", overflow: "visible" }}
+      style={{
+        width: "100vw",
+        //height: `${escala * 120 - 30}vh`,
+        height: "80vh",
+      }}
     >
       <Environment
         files="/hdr/tech.exr"
@@ -86,7 +94,7 @@ export default function Environmenty() {
       <ModifyCamera x={distance / alto} />
 
       <group
-        scale={1.1}
+        scale={escala}
         position={[0.5, -1, 3]}
         rotation={[
           (Math.PI / 180) * 0,

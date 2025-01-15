@@ -94,9 +94,7 @@ export const Inicio = React.forwardRef((props, ref) => {
 
       <Slider competencias={competencias}></Slider>
       <br></br>
-      <br></br>
       <LuzPuntero></LuzPuntero>
-      <br></br>
       <br></br>
       <Environmenty></Environmenty>
     </div>

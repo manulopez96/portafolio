@@ -8,28 +8,12 @@ export const Texto = ({ wDisplay }) => {
     setEscala(wDisplay / 25000 + 0.02);
   }
 
-  console.log("Display ancho: " + wDisplay);
-  console.log("Escala: " + escala);
-
+  
   return (
     <>
       <Text3D
         font="/fonts/Montserrat_Regular.json"
-        // font="/fonts/Rockybilly_Regular.json"
-        //font="/fonts/Mouse_Memoirs_Regular.json"
-        // font="/fonts/QuigleyWiggly_Regular.json"
-        // font="/fonts/Scriptina-Alternates-Regular.json"
-        // font="/fonts/Palamecia-Titling-Regular.json"
-        // font="/fonts/Rabid_Science_Regular.json"
-        // font="/fonts/ORGANICAL_PERSONAL_USE_Bold_Italic.json"
-        // font="/fonts/CHITONG_TRIAL_Regular.json"
-        // font="/fonts/Tolusen_Regular.json"
-        // font="/fonts/BlossomDreamsRegular.json"
-        // font="/fonts/REDHEKA_Regular.json"
-        // font="/fonts/Taskyna_Regular.json"
-        // font="/fonts/Zembrush_Regular.json"
-        // font="/fonts/Bellagieta_Regular.json"
-        // font="/fonts/JockerBlockRegular.json"
+      
         scale={escala}
         size={1}
         height={0.02}
