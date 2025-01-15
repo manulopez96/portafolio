@@ -40,7 +40,7 @@ export default function Environmenty() {
   const handlePointerDown = () => {
     pressTimer.current = setTimeout(() => {
       setEnableControls(true); // Activa los controles después de 1 segundo
-    }, 1000); // 1 segundo
+    }, 3000); // 1000 = 1 segundo
   };
 
   const handlePointerUp = () => {
