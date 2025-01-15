@@ -40,7 +40,7 @@ export default function Environmenty() {
   const handlePointerDown = () => {
     pressTimer.current = setTimeout(() => {
       setEnableControls(true); // Activa los controles después de 1 segundo
-    }, 2000); // 1 segundo
+    }, 1000); // 1 segundo
   };
 
   const handlePointerUp = () => {
@@ -71,6 +71,7 @@ export default function Environmenty() {
   return (
     <Canvas
       ref={placasRef}
+      onClick={handlePointerDown}
       onPointerDown={handlePointerDown}
       onPointerUp={handlePointerUp}
       style={{ width: "150vw", height: "110vh", overflow: "visible" }}
