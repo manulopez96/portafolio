@@ -43,7 +43,7 @@ export const LuzPuntero = () => {
         decay={0.01}
         color="white"
         position={[mousePosition.x, mousePosition.y, 1]}
-        // position={[-3, 3, 2]}
+      // position={[-3, 3, 2]}
       />
       {/* texto */}
       <Texto wDisplay={window.innerWidth}></Texto>
@@ -52,10 +52,12 @@ export const LuzPuntero = () => {
       {/*<OrbitControls />*/}
 
       {/* Plano para capturar eventos */}
-      <mesh position={[0, 0, -2]}>
+      {/*
+      <mesh position={[0, 0, 2]}>
         <planeGeometry args={[window.innerWidth, window.innerHeight * 0.3]} />
-        <meshStandardMaterial transparent opacity={0.1} color={0x09051d} />
+        <meshStandardMaterial transparent opacity={0.03} color={0x09051d} />
       </mesh>
+      */}
     </Canvas>
   );
 };

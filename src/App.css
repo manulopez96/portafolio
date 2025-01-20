@@ -2,7 +2,7 @@
   --color-principal1: #3e347b;
   --color-principal1-1: #9989ff;
   --color-principal1-2: #6051c0;
-  --color-principal1-3: #09051d;
+  --color-principal1-3: #07031d;
   --color-principal1-4: hsla(247, 52%, 25%, 0.2);
 
   --color-principal2: #b13c3c;
@@ -154,10 +154,12 @@ h2 {
 
 /* footer */
 .footer {
-  display: flex;
+  display: block;
   justify-content: center;
   margin-top: 50px;
-  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #0000004b;
 }
 .footer p {
   color: var(--color-claro);
@@ -169,7 +171,8 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: -2px 5px auto auto;
+  margin: -2px 15px auto auto;
+  padding-top: 15px;
 }
 .footer .footer-redes a {
   color: var(--color-claro);
