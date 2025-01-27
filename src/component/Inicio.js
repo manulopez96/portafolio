@@ -2,6 +2,8 @@ import React from "react";
 import { Slider } from "./layout/Slider";
 import { LuzPuntero } from "./three/LuzPuntero";
 import Environmenty from "./three/Environmenty";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import placeholder from "../assets/saturno.webp";
 
 export const Inicio = React.forwardRef((props, ref) => {
   const competencias = [
@@ -50,14 +52,17 @@ export const Inicio = React.forwardRef((props, ref) => {
       nombre: "Express",
     },
   ];
-
   return (
     <div ref={ref} className="page inicio">
       <h1>Hey there !</h1>
       <br></br>
       <div className="conteiner-mask">
         <div className="mask">
-          <img alt="pictureprofile" src="/img/profile/foto2.webp"></img>
+          <LazyLoadImage
+            alt="pictureprofile"
+            src="/img/profile/foto2.webp"
+            placeholderSrc={placeholder}
+          ></LazyLoadImage>
         </div>
       </div>
       <div className="descripcion">
@@ -92,7 +97,7 @@ export const Inicio = React.forwardRef((props, ref) => {
         </ul>
       </div>
 
-      <Slider competencias={competencias}></Slider>
+      <Slider competencias={competencias} placeholder={placeholder} ></Slider>
       <br></br>
       <LuzPuntero></LuzPuntero>
       <br></br>
