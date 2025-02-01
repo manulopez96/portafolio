@@ -11,8 +11,8 @@ export const Slider = ({ competencias, placeholder }) => {
             <div className="slide-img">
               <LazyLoadImage
                 alt={competencia.nombre}
-                src={competencia.src}
                 placeholderSrc={placeholder}
+                src={competencia.src}
               ></LazyLoadImage>
             </div>
             <p>{competencia.nombre}</p>

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Slider } from "./layout/Slider";
-import { LuzPuntero } from "./three/LuzPuntero";
-import Environmenty from "./three/Environmenty";
+// import { LuzPuntero } from "./three/LuzPuntero";
+// import Environmenty from "./three/Environmenty";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import placeholder from "../assets/saturno.webp";
+import { Cargando } from "./layout/Cargando";
+
+const LuzPuntero = React.lazy(() =>
+  import("./three/LuzPuntero").then((module) => ({
+    default: module.LuzPuntero,
+  }))
+);
+
+const Environmenty = React.lazy(() => import("./three/Environmenty"));
 
 export const Inicio = React.forwardRef((props, ref) => {
   const competencias = [
@@ -97,11 +106,16 @@ export const Inicio = React.forwardRef((props, ref) => {
         </ul>
       </div>
 
-      <Slider competencias={competencias} placeholder={placeholder} ></Slider>
+      <Slider competencias={competencias} placeholder={placeholder}></Slider>
       <br></br>
-      <LuzPuntero></LuzPuntero>
+      <Suspense fallback={<Cargando></Cargando>}>
+        <LuzPuntero></LuzPuntero>
+      </Suspense>
+
       <br></br>
-      <Environmenty></Environmenty>
+      <Suspense fallback={<Cargando></Cargando>}>
+        <Environmenty></Environmenty>
+      </Suspense>
     </div>
   );
 });
