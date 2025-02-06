@@ -1,7 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-export const Slider = ({ competencias, placeholder }) => {
+export const Slider = ({ competencias }) => {
   return (
     <div className="slider">
       <div className="slide-track">
@@ -11,8 +11,9 @@ export const Slider = ({ competencias, placeholder }) => {
             <div className="slide-img">
               <LazyLoadImage
                 alt={competencia.nombre}
-                placeholderSrc={placeholder}
                 src={competencia.src}
+                effect="blur"
+                threshold={100}
               ></LazyLoadImage>
             </div>
             <p>{competencia.nombre}</p>
@@ -25,7 +26,8 @@ export const Slider = ({ competencias, placeholder }) => {
               <LazyLoadImage
                 alt={competencia.nombre}
                 src={competencia.src}
-                placeholderSrc={placeholder}
+                effect="blur"
+                threshold={100}
               ></LazyLoadImage>
             </div>
             <p>{competencia.nombre}</p>

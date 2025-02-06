@@ -3,7 +3,7 @@ import { Slider } from "./layout/Slider";
 // import { LuzPuntero } from "./three/LuzPuntero";
 // import Environmenty from "./three/Environmenty";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import placeholder from "../assets/saturno.webp";
+import placeholderFoto from "../assets/foto2C01.webp";
 import { Cargando } from "./layout/Cargando";
 
 const LuzPuntero = React.lazy(() =>
@@ -68,9 +68,10 @@ export const Inicio = React.forwardRef((props, ref) => {
       <div className="conteiner-mask">
         <div className="mask">
           <LazyLoadImage
-            alt="pictureprofile"
             src="/img/profile/foto2.webp"
-            placeholderSrc={placeholder}
+            alt="pictureprofile"
+            effect="blur"
+            placeholderSrc={placeholderFoto}
           ></LazyLoadImage>
         </div>
       </div>
@@ -106,16 +107,18 @@ export const Inicio = React.forwardRef((props, ref) => {
         </ul>
       </div>
 
-      <Slider competencias={competencias} placeholder={placeholder}></Slider>
+      <Slider competencias={competencias}></Slider>
       <br></br>
-      <Suspense fallback={<Cargando></Cargando>}>
-        <LuzPuntero></LuzPuntero>
-      </Suspense>
+      <>
+        <Suspense fallback={<Cargando></Cargando>}>
+          <LuzPuntero></LuzPuntero>
+        </Suspense>
 
-      <br></br>
-      <Suspense fallback={<Cargando></Cargando>}>
-        <Environmenty></Environmenty>
-      </Suspense>
+        <br></br>
+        <Suspense fallback={<Cargando></Cargando>}>
+          <Environmenty></Environmenty>
+        </Suspense>
+      </>
     </div>
   );
 });

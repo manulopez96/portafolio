@@ -19,6 +19,7 @@ export const Curriculum = React.forwardRef((props, ref) => {
         <iframe
           title="curriculum"
           src="/data/curriculumEmanuelLopez.pdf"
+          loading="lazy"
           width="100%"
           height="1200px"
         ></iframe>
