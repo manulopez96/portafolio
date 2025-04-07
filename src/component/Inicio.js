@@ -29,8 +29,20 @@ export const Inicio = React.forwardRef((props, ref) => {
       nombre: "Node",
     },
     {
-      src: "/img/competencies/js.webp",
-      nombre: "Javascript",
+      src: "/img/competencies/golang.webp",
+      nombre: "Go",
+    },
+    {
+      src: "/img/competencies/docker.webp",
+      nombre: "Docker",
+    },
+    {
+      src: "/img/competencies/traefik.webp",
+      nombre: "Traefik",
+    },
+    {
+      src: "/img/competencies/linux.webp",
+      nombre: "Linux",
     },
     {
       src: "/img/competencies/mongodb.webp",
@@ -41,20 +53,20 @@ export const Inicio = React.forwardRef((props, ref) => {
       nombre: "SQL",
     },
     {
+      src: "/img/competencies/postgresql.webp",
+      nombre: "PostgreSQL",
+    },
+    {
+      src: "/img/competencies/js.webp",
+      nombre: "Javascript",
+    },
+    {
       src: "/img/competencies/html.webp",
       nombre: "HTML",
     },
     {
       src: "/img/competencies/css.webp",
       nombre: "CSS",
-    },
-    {
-      src: "/img/competencies/linux.webp",
-      nombre: "Linux",
-    },
-    {
-      src: "/img/competencies/angular.webp",
-      nombre: "Angular",
     },
     {
       src: "/img/competencies/expressjs.webp",
