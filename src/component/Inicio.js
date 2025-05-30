@@ -123,11 +123,6 @@ export const Inicio = React.forwardRef((props, ref) => {
       <br></br>
       <>
         <Suspense fallback={<Cargando></Cargando>}>
-          <LuzPuntero></LuzPuntero>
-        </Suspense>
-
-        <br></br>
-        <Suspense fallback={<Cargando></Cargando>}>
           <Environmenty></Environmenty>
         </Suspense>
       </>
