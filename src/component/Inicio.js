@@ -6,11 +6,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import placeholderFoto from "../assets/foto2C01.webp";
 import { Cargando } from "./layout/Cargando";
 
-const LuzPuntero = React.lazy(() =>
-  import("./three/LuzPuntero").then((module) => ({
-    default: module.LuzPuntero,
-  }))
-);
 
 const Environmenty = React.lazy(() => import("./three/Environmenty"));
 
