@@ -158,7 +158,7 @@ export const Contacto = () => {
             <div className="mb-4">
               <h6 className="text-primary fw-bold text-uppercase mb-1" style={{ fontSize: '0.85rem' }}>Teléfonos de Contacto</h6>
               <p className="mb-1">
-                <a href="tel:+5493515228856" className="text-black text-decoration-none hover-link">
+                <a href="tel:+5493512809912" className="text-black text-decoration-none hover-link">
                   📞 + 54 351 2809912
                 </a>
               </p>
