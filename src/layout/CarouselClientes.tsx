@@ -10,7 +10,7 @@ interface CarouselProps {
     items: CarouselClientesItem[];
 }
 
-export const CarouselClientes: React.FC<CarouselProps> = ({ items }) => {
+export const CarouselLogos: React.FC<CarouselProps> = ({ items }) => {
     if (!items || items.length === 0) return null;
 
     // Duplicamos los items para crear el bucle infinito visual perfecto
@@ -18,7 +18,7 @@ export const CarouselClientes: React.FC<CarouselProps> = ({ items }) => {
 
     return (
         <div>
-            <h3 className='mt-5 mb-0 text-center text-muted fw-bold'>Nuestros Clientes</h3>
+            <h3 className='mt-5 mb-0 text-center text-muted fw-bold'>Tecnologias utilizadas</h3>
             <div className="marquee-container" style={{ marginTop: 'clamp(10px, 20vw, 12px)' }}>
                 <div className="marquee-content">
                     {doubleItems.map((item, index) => (

@@ -31,16 +31,13 @@ export const Footer = () => {
 
                     {/* Columna 2: Redes Sociales */}
                     <div className="col-12 col-md-3">
-                        <h5 className="text-uppercase fw-bold mb-3 text-success">Síguenos</h5>
-                        <div className='list-unstyled col-12 col-md-6 row g-0 justify-content-center'>
-                            <a href="https://www.linkedin.com/in/atto-electronica-9842b9422/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light col-1">
+                        <h5 className="text-uppercase fw-bold mb-3 text-success">Sígueme</h5>
+                        <div className='list-unstyled col-12 col-md-6 row g-0 justify-content-lg-start justify-content-center'>
+                            <a href="https://www.linkedin.com/in/lopez-emanuel/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light col-1 mx-md-2">
                                 <i className="bi bi-linkedin"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/atto-electronica-9842b9422/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light col-1 mx-md-4 mx-1">
-                                <i className="bi bi-instagram"></i>
-                            </a>
-                            <a href="https://maps.app.goo.gl/jUULFVXK3dcboHpX9" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light col-1">
-                                <i className="bi bi-google"></i>
+                            <a href="https://github.com/manulopez96" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light col-1 mx-md-2">
+                                <i className="bi bi-github"></i>
                             </a>
                         </div>
 
@@ -49,21 +46,16 @@ export const Footer = () => {
 
                     {/* Columna 3: Links de navegación o Info rápida */}
                     <div className="col-12 col-md-3">
-                        <h5 className="text-uppercase fw-bold mb-3 text-success">Atto Electrónica</h5>
+                        <h5 className="text-uppercase fw-bold mb-3 text-success">LPZ Dev</h5>
                         <ul className="list-unstyled text lh-lg">
                             <li>Córdoba, Argentina</li>
-                            <li>Lunes a Viernes 8:30 - 14:30 hs</li>
+                            <li>Lunes a Viernes 8:30 - 16:30 hs</li>
                             <li>
-                                <a href="https://wa.me/543515228856" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">+ 54 351 5228856</a>
+                                <a href="https://wa.me/543512809912" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">+ 54 351 2809912</a>
                             </li>
+                            
                             <li>
-                                <a href="mailto:ventas@attoelectronica.com.ar" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">ventas@attoelectronica.com.ar</a>
-                            </li>
-                            <li>
-                                <a href="mailto:automatismos@attoelectronica.com.ar" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">automatismos@attoelectronica.com.ar</a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@attoelectronica.com.ar" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">info@attoelectronica.com.ar</a>
+                                <a href="mailto:info@lpzdev.com.ar" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-light">info@lpzdev.com.ar</a>
                             </li>
                         </ul>
                     </div>

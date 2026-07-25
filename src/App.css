@@ -100,10 +100,10 @@
 }
 
 /* Altura optimizada para celulares (pantallas menores a 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .carousel-img-custom {
     object-position: left;
-    height: 380px; /* Aquí controlas qué tan alta quieres que se vea la foto en el celular */
+    height: 380px;
   }
 }
 
@@ -119,20 +119,17 @@
   position: relative;
 }
 
-/* El riel que contiene todos los logos alineados */
 .marquee-content {
   display: flex;
   width: max-content;
-  gap: 3rem; /* Espacio horizontal entre cada logo (unos 48px) */
-  animation: scrollMarquee 25s linear infinite; /* 'linear' asegura que el movimiento sea constante */
+  gap: 3rem; 
+  animation: scrollMarquee 20s linear infinite; 
 }
 
-/* Pausar el movimiento si el usuario pasa el mouse por encima (opcional, muy buen toque) */
 .marquee-content:hover {
   animation-play-state: paused;
 }
 
-/* Caja contenedora de cada logo individual */
 .marquee-item {
   flex-shrink: 0;
   display: flex;
@@ -140,9 +137,8 @@
   justify-content: center;
 }
 
-/* Control del tamaño de las imágenes/logos */
 .marquee-img {
-  height: 150px; 
+  height: 120px; 
   width: auto;
   object-fit: contain;
   filter: grayscale(100%); 
@@ -150,14 +146,12 @@
   transition: all 0.3s ease;
 }
 
-/* Al pasar el mouse por encima de un logo, recupera su color o brillo (opcional) */
 .marquee-item:hover .marquee-img {
   filter: grayscale(0%);
   opacity: 1;
 
 }
 
-/* LA MAGIA: Animación que desplaza exactamente el 50% (por eso duplicamos los elementos) */
 @keyframes scrollMarquee {
   0% {
     transform: translateX(0);

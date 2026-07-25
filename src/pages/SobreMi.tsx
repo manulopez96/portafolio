@@ -21,14 +21,16 @@ export const SobreMi = () => {
                 <div className="col-12 col-md-6 text-start">
 
                     <p className="lead text-dark fw-normal mb-3">
-                        Atto Electrónica es una empresa dedicada a la venta de servicios de automatismo industrial y soluciones tecnológicas. Con años de experiencia en el sector, nos hemos consolidado como un referente en la industria, ofreciendo productos de alta calidad y un servicio al cliente excepcional.
+                        Técnico Electrónico e Ingeniero en Sistemas en formación (UTN FRC) con amplia trayectoria en desarrollo de software e integración industrial.
                     </p>
                     <p className="text-muted mb-3 lh-lg">
-                        Nuestro equipo de profesionales altamente capacitados trabaja incansablemente para garantizar que cada proyecto se complete con precisión y eficiencia. Nos enorgullece nuestra capacidad para adaptarnos a las necesidades cambiantes del mercado y ofrecer soluciones innovadoras que superen las expectativas de nuestros clientes.
+                        Mi perfil combina una sólida base en electrónica con la arquitectura de software moderna. Cuento con años de experiencia programando PLCs y conectando automatismos industriales con entornos web a través de protocolos de red. En el área de software, me especializo en el desarrollo backend con Go (Golang), diseño e implementación de arquitectura cliente-servidor, gestión de bases de datos y orquestación de entornos con Docker.
+
+Destaco por mi capacidad de pensamiento lógico, resolución eficiente de problemas técnicos complejos y una constante evolución tecnológica.
                     </p>
 
                     {/* Alerta o caja destacada para las marcas autorizadas */}
-                    <div className="p-3 bg-light border-start border-4 border-success rounded-end shadow-sm mt-4">
+                    {/* <div className="p-3 bg-light border-start border-4 border-success rounded-end shadow-sm mt-4">
                         <p className="mb-0 text-dark fw-medium">
                             Trabajamos ofreciendo <strong>servicio técnico autorizado</strong> para marcas líderes de la industria como:
                         </p>
@@ -36,7 +38,7 @@ export const SobreMi = () => {
                             <span className="badge bg-warning px-3 py-2 fs-6 text-black">ESAB</span>
                             <span className="badge bg-success px-3 py-2 fs-6">Schneider Electric</span>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* 3. Columna de la Imagen */}
@@ -60,7 +62,7 @@ export const SobreMi = () => {
 
                 <div className="col-12 d-flex justify-content-center">
                     <h2 className="d-flex justify-content-center">
-                        Nuestros valores
+                        Valores
                         <span
                             className="position-absolute bg-success"
                             style={{ height: '3px', width: '100px', marginTop: '45px' }}
@@ -70,13 +72,13 @@ export const SobreMi = () => {
                 <div className="card-group row g-3">
 
                 <div className="col-12 col-md-4 d-flex justify-content-center">
-                    <CardValores title="Calidad y Excelencia" value="Comprometidos con entregar productos y servicios duraderos, funcionales y bien construidos, con cuidando a los detalles."></CardValores>
+                    <CardValores title="Rigor Técnico e Integridad de Código" value="Diseño soluciones priorizando la estabilidad, el rendimiento y la mantenibilidad a largo plazo. Desde el desarrollo en bajo nivel hasta arquitecturas backend en Go, cada línea de código y configuración de red se construye bajo estándares estrictos para garantizar un funcionamiento impecable."></CardValores>
                 </div>
                 <div className="col-12 col-md-4 d-flex justify-content-center">
-                    <CardValores title="Innovación y Adaptabilidad" value="Buscamos constantemente formas de mejorar, resolver problemas complejos y adaptarnos a los cambios del mercado y la tecnología."></CardValores>
+                    <CardValores title="Convergencia OT/IT (Hardware y Software)" value="Entiendo el lenguaje de la industria y la web por igual. Mi valor diferencial reside en conectar de forma fluida el mundo físico de la automatización y los PLCs con plataformas digitales, bases de datos y servidores modernos, cerrando la brecha entre la planta y la nube."></CardValores>
                 </div>
                 <div className="col-12 col-md-4 d-flex justify-content-center">
-                    <CardValores title="Trabajo en Equipo y Colaboración" value="Promovemos una cultura de comunicación abierta donde las mejores ideas ganan. Priorizamos el impacto del equipo sobre los logros individuales."></CardValores>
+                    <CardValores title="Trabajo en Equipo y Colaboración" value="Promuevo una cultura de comunicación abierta donde las mejores ideas ganan. Priorizo el impacto del equipo sobre los logros individuales."></CardValores>
                 </div>
                 </div>
 

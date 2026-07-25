@@ -114,7 +114,7 @@ export const Contacto = () => {
                 className="form-control text-black border-secondary"
                 id="asunto"
                 name="asunto"
-                placeholder="Ej: Presupuesto Servicio Técnico"
+                placeholder="Ej: Presupuesto servicio web"
                 value={formData.asunto}
                 onChange={handleChange}
               />
@@ -128,8 +128,8 @@ export const Contacto = () => {
                 id="mensaje"
                 name="mensaje"
                 rows={4}
-                placeholder="Escribí los detalles de tu consulta o el modelo del equipo..."
-                value={formData.mensaje} // Corregido el bind del value aquí
+                placeholder="Escribí los detalles de tu consulta"
+                value={formData.mensaje} 
                 onChange={handleChange}
               />
             </div>
@@ -149,21 +149,21 @@ export const Contacto = () => {
           <div className="p-4 p-md-5 border border-secondary border-opacity-50 rounded-4 h-100 bg-dark bg-opacity-10 d-flex flex-column justify-content-center">
             <h4 className="mb-4 text-black fw-semibold">Atención al Cliente</h4>
             
-            <div className="mb-4">
+            {/* <div className="mb-4">
               <h6 className="text-primary fw-bold text-uppercase mb-1" style={{ fontSize: '0.85rem' }}>Nuestro Taller</h6>
               <p className="text-black mb-0">Calle Obispo Clara 219, San Martin</p>
               <p className="text-muted small">Córdoba, Argentina</p>
-            </div>
+            </div> */}
 
             <div className="mb-4">
               <h6 className="text-primary fw-bold text-uppercase mb-1" style={{ fontSize: '0.85rem' }}>Teléfonos de Contacto</h6>
               <p className="mb-1">
                 <a href="tel:+5493515228856" className="text-black text-decoration-none hover-link">
-                  📞 + 54 351 5228856
+                  📞 + 54 351 2809912
                 </a>
               </p>
               <p className="mb-0">
-                <a href="https://api.whatsapp.com/send?phone=543515228856&text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer" className="text-success text-decoration-none fw-semibold">
+                <a href="https://api.whatsapp.com/send?phone=543512809912&text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer" className="text-success text-decoration-none fw-semibold">
                   💬 Escribinos por WhatsApp
                 </a>
               </p>
@@ -172,8 +172,8 @@ export const Contacto = () => {
             <div className="mb-4">
               <h6 className="text-primary fw-bold text-uppercase mb-1" style={{ fontSize: '0.85rem' }}>Consultas Generales</h6>
               <p className="mb-0">
-                <a href="mailto:info@attoelectronica.com.ar" className="text-black text-decoration-none hover-link">
-                  ✉️ info@attoelectronica.com.ar
+                <a href="mailto:info@lpzdev.com.ar" className="text-black text-decoration-none hover-link">
+                  ✉️ info@lpzdev.com.ar
                 </a>
               </p>
             </div>
@@ -181,8 +181,8 @@ export const Contacto = () => {
             <hr className="border-secondary my-3" />
 
             <div>
-              <h6 className="text-primary fw-bold text-uppercase mb-1" style={{ fontSize: '0.85rem' }}>Horarios de Recepción</h6>
-              <p className="text-black mb-1">Lunes a Viernes: 8:30 hs a 14:30 hs</p>
+              <h6 className="text-primary fw-bold text-uppercase mb-1" style={{ fontSize: '0.85rem' }}>Horarios de Atención</h6>
+              <p className="text-black mb-1">Lunes a Viernes: 8:30 hs a 16:30 hs</p>
               <p className="text-muted small mb-0">Fines de semana y feriados cerrado.</p>
             </div>
           </div>
