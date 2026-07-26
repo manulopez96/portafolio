@@ -42,8 +42,9 @@ Destaco por mi capacidad de pensamiento lógico, resolución eficiente de proble
                 </div>
 
                 {/* 3. Columna de la Imagen */}
-                <div className="col-12 col-md-5 d-flex justify-content-center">
-                    <img
+                <div className="col-12 col-md-5 d-flex h-100 justify-content-center">
+                    <iframe src="/cv/curriculumEmanuelLopez.pdf" width={"500px"} height={"500px"}></iframe>
+                    {/* <img
                         src="/fotosAtto/attoFrente2.jpeg"
                         className="img-fluid rounded-4 shadow-lg"
                         alt="Instalaciones de Atto Electrónica"
@@ -54,7 +55,7 @@ Destaco por mi capacidad de pensamiento lógico, resolución eficiente de proble
                             height: '100%',
                             maxWidth: '400px',
                         }}
-                    />
+                    /> */}
                 </div>
 
                 <hr />
