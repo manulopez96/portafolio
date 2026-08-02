@@ -63,21 +63,21 @@ export const NavBar = () => {
           <img
             style={{
               // El tamaño del logo también cambia dinámicamente
-              width: isScrolled ? '15vw' : '14vw',
-              maxWidth: isScrolled ? '150px' : '250px',
-              minWidth: '70px',
+              maxWidth: isScrolled ? '140px' : '300px',
+              width: isScrolled ? '12vw' : '15vw',
+              minWidth: '100px',
               transition: 'all 0.6s ease' // Suaviza el cambio de tamaño del logo
             }}
             src="/logos/LPZDev400x200.png"
             alt="logo"
-            className="shaped-shadow-lg"
+            className="shaped-shadow-sm"
           />
         </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={isOpen} aria-label="Toggle navigation" onClick={() => setIsOpen(!isOpen)}>
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-md-5"
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-md-5 fs-5"
             style={{
               fontSize: isScrolled ? '3vh' : '3.5vh',
               transition: 'all 0.6s ease'

@@ -1,4 +1,5 @@
 import { CardServicios, type ServicioItem } from "../components/CardServicio"
+import { useWindowSize } from "../hooks/UseWindowSize";
 import { Carousel, type CarouselItem } from '../layout/Carousel';
 import { CarouselLogos, type CarouselClientesItem as CarouselLogosItem } from "../layout/CarouselClientes";
 
@@ -8,28 +9,28 @@ export const Inicio = () => {
   const misSlides: CarouselItem[] = [
     {
       id: 1,
-      imageUrl: "/carrusel/webdev1200x400.png",
+      imageUrl: `${useWindowSize()<790 ? "/carrusel/webdev400x400.webp" : "/carrusel/webdev1200x400.webp"}`,
       altText: "Desarrollo de Páginas Web imagen",
       title: "Desarrollo de Páginas Web",
       description: "Diseñamos y desarrollamos sitios web modernos, rápidos y optimizados"
     },
     {
       id: 3,
-      imageUrl: "/carrusel/diseño1200x400.jpeg",
+      imageUrl: "/carrusel/diseño1200x400.webp",
       altText: "Diseño de Software a Medida imagen",
       title: "Diseño de Software a Medida",
       description: "Soluciones tecnológicas adaptadas al 100% a la lógica de tu negocio"
     },
     {
       id: 4,
-      imageUrl: "/carrusel/modbus1200x400.png",
+      imageUrl: `${useWindowSize()<790 ? "/carrusel/modbus400x400.jpg" : "/carrusel/modbus1200x400.webp"}`,
       altText: "Programación a Bajo Nivel y Conexión Web con Modbus TCP imagen",
       title: "Programación a Bajo Nivel y Conexión Web con Modbus TCP",
       description: "Desarrollamos soluciones avanzadas de integración entre la web y dispositivos industriales."
     },
     {
       id: 2,
-      imageUrl: "/carrusel/correos1200x400.png",
+      imageUrl: `${useWindowSize()<790 ? "/carrusel/correos400x400.webp" : "/carrusel/correos1200x400.webp"}`,
       altText: "Gestión de Correos Empresariales imagen",
       title: "Gestión de Correos Empresariales",
       description: "Comunicación profesional, segura y sin interrupciones"
