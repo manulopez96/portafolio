@@ -16,16 +16,17 @@ export const Inicio = () => {
     },
     {
       id: 3,
-      imageUrl: "/carrusel/diseño21200x400.webp",
+      imageUrl: `${useWindowSize() < 790 ? "/carrusel/diseño400x400.webp" : "/carrusel/diseño1200x400.webp"}`,
       altText: "Diseño de Software a Medida imagen",
       title: "Diseño de Software a Medida",
       description: "Soluciones tecnológicas adaptadas al 100% a la lógica de tu negocio"
     },
     {
       id: 4,
-      imageUrl: `${useWindowSize()<790 ? "/carrusel/modbus400x400.jpg" : "/carrusel/modbus1200x400.webp"}`,
-      altText: "Programación a Bajo Nivel y Conexión Web con Modbus TCP imagen",
-      title: "Programación a Bajo Nivel y Conexión Web con Modbus TCP",
+      imageUrl: "/carrusel/bin1200x400.webp",
+      // imageUrl: `${useWindowSize()<790 ? "/carrusel/modbus400x400.jpg" : "/carrusel/bin1200x400.jpg"}`,
+      altText: "Programación a Bajo Nivel y Conexión Web a Modbus TCP imagen",
+      title: "Programación a Bajo Nivel y Conexión Web a Modbus TCP",
       description: "Desarrollamos soluciones avanzadas de integración entre la web y dispositivos industriales."
     },
     {
@@ -46,7 +47,7 @@ export const Inicio = () => {
       text3: "Modelo e implemento bases de datos relacionales con PostgreSQL y MySQL, garantizando la integridad de los datos, y empaqueto toda la infraestructura con Docker para despliegues ágiles, portables y seguros.",
       text4: "Base de Datos: Gestión, modelado y optimización en PostgreSQL y MySQL.",
       text5: "Arquitectura: Diseño de API REST y ecosistemas de microservicios escalables.",
-      imageUrl1: "/cardServicios/backendService.png",
+      imageUrl1: "/cardServicios/backendService.webp",
       // imageUrl2: "https://picsum.photos/400/400?random=2",
     },
     {
@@ -57,7 +58,7 @@ export const Inicio = () => {
       text3: "Implemento arquitecturas de cliente sólidas que incluyen enrutamiento dinámico, gestión de estado y flujos de autenticación seguros mediante la integración de tokens JWT.",
       text4: "Consumo y sincronización fluida con APIs REST backend.",
       text5: "",
-      imageUrl1: "/cardServicios/frontendService.png",
+      imageUrl1: "/cardServicios/frontendService.webp",
       // imageUrl2: "https://picsum.photos/400/400?random=2",
     },
     {
@@ -68,7 +69,7 @@ export const Inicio = () => {
       text3: "Optimización de consultas lentas (queries), diseño de esquemas de datos desde cero, migraciones de datos seguras y estrategias de respaldo (backups) automatizados.",
       text4: "",
       text5: "",
-      imageUrl1: "/cardServicios/dbService.jpg",
+      imageUrl1: "/cardServicios/dbService.webp",
       // imageUrl2: "https://picsum.photos/400/400?random=2",
     },
     {
@@ -79,7 +80,7 @@ export const Inicio = () => {
       text3: "Soluciones full-stack (Go + ReactTS) creadas a la medida exacta de la lógica del cliente, superando las limitaciones de los software genéricos comercializados en el mercado.",
       text4: "",
       text5: "",
-      imageUrl1: "/cardServicios/programing.jpg",
+      imageUrl1: "/cardServicios/programing.webp",
       // imageUrl2: "https://picsum.photos/400/400?random=2",
     },
     {
@@ -90,7 +91,7 @@ export const Inicio = () => {
       text3: "Reducción de costos de servidor (por la eficiencia de Go), mayor seguridad en las autenticaciones y una interfaz web moderna, responsiva y rápida.",
       text4: "",
       text5: "",
-      imageUrl1: "/cardServicios/refactorService.jpg",
+      imageUrl1: "/cardServicios/refactorService.webp",
       // imageUrl2: "https://picsum.photos/400/400?random=2",
     },
     {
@@ -101,7 +102,7 @@ export const Inicio = () => {
       text3: "Conectamos el hardware de producción con backends de alto rendimiento en Go y dashboards web en React, permitiendo monitorear variables de proceso, registrar datos históricos, gestionar alarmas y enviar comandos de control a tus máquinas desde cualquier dispositivo y con total seguridad.",
       text4: "",
       text5: "",
-      imageUrl1: "/cardServicios/plcService.jpg",
+      imageUrl1: "/cardServicios/plcService.webp",
       // imageUrl2: "https://picsum.photos/400/400?random=2",
     },
     
