@@ -9,7 +9,7 @@ export const SobreMi = () => {
                 {/* 1. El título ahora ocupa toda la fila de forma correcta */}
                 <div className="col-12">
                     <h2 className="text-uppercase fw-bold text-secondary position-relative d-inline-block">
-                        Sobre Nosotros
+                        Sobre mi
                         <span
                             className="position-absolute start-0 bottom-0 bg-success"
                             style={{ height: '3px', width: '60px', marginBottom: '-8px' }}

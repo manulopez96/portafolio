@@ -16,7 +16,7 @@ export const Inicio = () => {
     },
     {
       id: 3,
-      imageUrl: "/carrusel/diseño1200x400.webp",
+      imageUrl: "/carrusel/diseño21200x400.webp",
       altText: "Diseño de Software a Medida imagen",
       title: "Diseño de Software a Medida",
       description: "Soluciones tecnológicas adaptadas al 100% a la lógica de tu negocio"

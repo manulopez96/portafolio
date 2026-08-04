@@ -164,7 +164,7 @@ export const Contacto = () => {
               </p>
               <p className="mb-0">
                 <a href="https://api.whatsapp.com/send?phone=543512809912&text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer" className="text-success text-decoration-none fw-semibold">
-                  💬 Escribinos por WhatsApp
+                  💬 Contactarme por WhatsApp
                 </a>
               </p>
             </div>
